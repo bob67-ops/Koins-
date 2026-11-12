@@ -1,0 +1,144 @@
+-- [[ CONFIGURATION ]]
+_G.ClaimRewards = true
+_G.AutoPickups = true
+_G.AutoSkip = true
+_G.AutoChain = false
+_G.SupportCaravan = false
+_G.AutoDJ = true
+_G.AutoNecro = false
+_G.AutoMercenary = true
+_G.AutoMilitary = false
+_G.AntiLag = false
+_G.AutoRejoin = true
+
+-- [[ WEBHOOK SETTINGS ]]
+_G.SendWebhook = false
+_G.Webhook = "YOUR-WEBHOOK-URL-HERE"
+
+-- [[ INITIALIZE LIBRARY ]]
+local TDS = loadstring(game:HttpGet("https://f.space-hub.cc/Scripts/TDS/Recorders/Library.lua"))()
+
+-- [[ START STRATEGY ]]
+TDS:Loadout("Gatling Gun", "DJ Booth", "Trapper", "Mercenary Base", "Hacker")
+TDS:Mode("Frost")
+TDS:GameInfo("Dead Ahead", {"HiddenEnemies","Quarantine","Glass","ExplodingEnemies","Limitation","Committed","Fog"})
+
+TDS:UnlockTimeScale()
+TDS:TimeScale(2)
+
+TDS:Place("Trapper", 4.779102325439453, 0.9999983906745911, 9.742326736450195) -- 1
+TDS:Upgrade(1)
+TDS:Place("Trapper", 5.127504348754883, 0.9999979138374329, 12.754085540771484) -- 2
+TDS:Place("Trapper", 5.130433082580566, 0.9999925494194031, 15.786029815673828) -- 3
+TDS:Place("Trapper", 5.114696502685547, 0.9999889731407166, 18.80884552001953) -- 4
+TDS:Place("Trapper", 5.0801310539245605, 0.9999964833259583, 21.83108139038086) -- 5
+TDS:Place("Trapper", 2.7112154960632324, 0.9999961256980896, 23.698471069335938) -- 6
+TDS:Upgrade(6)
+TDS:Upgrade(5)
+TDS:Upgrade(4)
+TDS:Upgrade(3)
+TDS:Place("Trapper", 3.5659401416778564, 0.9999953508377075, 28.67878532409668) -- 7
+TDS:Upgrade(7)
+TDS:Upgrade(1)
+TDS:SetOption(1, "Trap", "Landmine")
+TDS:Upgrade(3)
+TDS:SetOption(3, "Trap", "Landmine")
+TDS:Upgrade(4)
+TDS:SetOption(4, "Trap", "Landmine")
+TDS:Upgrade(5)
+TDS:SetOption(5, "Trap", "Landmine")
+TDS:Upgrade(6)
+TDS:SetOption(6, "Trap", "Landmine")
+TDS:Upgrade(7)
+TDS:SetOption(7, "Trap", "Landmine")
+TDS:Upgrade(2)
+TDS:Upgrade(2)
+TDS:SetOption(2, "Trap", "Landmine")
+TDS:Place("Gatling Gun", -2.8070125579833984, 0.9999883770942688, 29.225770950317383) -- 8
+TDS:Place("DJ Booth", -1.1209473609924316, 0.9999874830245972, 24.987483978271484) -- 9
+TDS:Upgrade(9)
+TDS:Upgrade(9)
+TDS:SetOption(9, "Track", "Green")
+TDS:Upgrade(8)
+TDS:Upgrade(9)
+TDS:Place("Hacker", 0.9415698051452637, 0.9499830007553101, -37.497413635253906) -- 10
+TDS:Place("Hacker", 0.8439550399780273, 1.000003695487976, -22.971561431884766) -- 11
+TDS:Upgrade(8)
+TDS:Upgrade(8)
+TDS:Upgrade(4)
+TDS:Upgrade(10)
+TDS:Upgrade(10)
+TDS:Upgrade(11)
+TDS:Upgrade(11)
+TDS:Upgrade(4)
+TDS:SetOption(4, "Trap", "Bear Traps")
+TDS:Upgrade(5)
+TDS:Upgrade(8)
+TDS:Upgrade(5)
+TDS:SetOption(5, "Trap", "Bear Traps")
+TDS:Upgrade(6)
+TDS:Upgrade(6)
+TDS:SetOption(6, "Trap", "Bear Traps")
+TDS:Upgrade(7)
+TDS:Upgrade(7)
+TDS:SetOption(7, "Trap", "Bear Traps")
+TDS:Upgrade(9)
+TDS:Upgrade(9)
+TDS:Upgrade(10)
+TDS:Upgrade(8)
+TDS:SetOption(9, "Track", "Red")
+TDS:Upgrade(10)
+TDS:Ability(10, "Hologram Tower", {towerToClone = 8, towerPosition = Vector3.new(-6.690541744232178, 0.9999911189079285, 30.63426971435547)},true)
+TDS:SetOption(9, "Track", "Green")
+TDS:Place("Mercenary Base", 1.8619747161865234, 1.0249991416931152, 32.151954650878906) -- 12
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:SetOption(12, "Unit 1", "Riot Guard")
+TDS:SetOption(12, "Unit 2", "Riot Guard")
+TDS:SetOption(12, "Unit 3", "Riot Guard")
+TDS:Place("Mercenary Base", -1.7726507186889648, 0.9999855160713196, 34.98647689819336) -- 13
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:SetOption(13, "Unit 1", "Riot Guard")
+TDS:SetOption(13, "Unit 2", "Riot Guard")
+TDS:SetOption(13, "Unit 3", "Riot Guard")
+TDS:Upgrade(13)
+TDS:Place("Mercenary Base", -5.103227615356445, 0.9999938011169434, 38.1114387512207) -- 14
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+TDS:SetOption(14, "Unit 1", "Riot Guard")
+TDS:SetOption(14, "Unit 3", "Riot Guard")
+TDS:SetOption(14, "Unit 1", "Riot Guard")
+TDS:SetOption(14, "Unit 2", "Riot Guard")
+TDS:Upgrade(14)
+TDS:Ability(10, "Hologram Tower", {towerToClone = 8, towerPosition = Vector3.new(2.232456684112549, 1.024998664855957, 36.631290435791016)},true)
+TDS:Upgrade(8)
+TDS:Upgrade(13)
+TDS:Upgrade(12)
+TDS:SetOption(9, "Track", "Red")
+TDS:Ability(10, "Hologram Tower", {towerToClone = 8, towerPosition = Vector3.new(2.316270351409912, 1.0250005722045898, 36.53353500366211)},true)
+TDS:Upgrade(14)
+TDS:Upgrade(10,2)
+TDS:Ability(10, "Hologram Tower", {towerToClone = 8, towerPosition = Vector3.new(2.2561540603637695, 1.024998664855957, 36.613948822021484)},true)
+TDS:Upgrade(11)
+TDS:Upgrade(11)
+TDS:Upgrade(11,2)
+TDS:Upgrade(1)
+TDS:Upgrade(1)
+TDS:SetOption(1, "Trap", "Bear Traps")
+TDS:Upgrade(3)
+TDS:Upgrade(3)
+TDS:SetOption(3, "Trap", "Bear Traps")
+TDS:Upgrade(2)
+TDS:Upgrade(2)
+TDS:SetOption(2, "Trap", "Bear Traps")
+TDS:Ability(11, "Hologram Tower", {towerToClone = 8, towerPosition = Vector3.new(2.44295072555542, 1.024998664855957, 36.46078109741211)},true)
+
+-- [[ END OF STRATEGY ]]
